@@ -47,13 +47,14 @@
   --text-logo: 400 2.5rem var(--leckerli);
   --text-md: 800 1.75rem var(--baloo);
   --text-sm: 800 1.125rem var(--baloo);
+  --text-body-rd: 600 .875rem var(--open-sans);
   --text-body-md: 400 1rem var(--open-sans);
   --text-body-sm: 400 0.875rem var(--open-sans);
   --text-body-xs: 400 0.75rem var(--open-sans);
 }
 
 body {
-  overflow: hidden;
+  overflow-y: hidden;
   background-color: var(--shape-background);
   font: var(--text-body-md);
   color: var(--text-body);

@@ -21,8 +21,9 @@ textarea {
 
 input[type="datetime-local"] {
   text-transform: uppercase;
+  &::-webkit-calendar-picker-indicator{
+    display: none;
+  }
 }
 
-label {
-  font: var(--text-body-sm);
-}
+
