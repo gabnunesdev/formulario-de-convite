@@ -11,15 +11,17 @@
   --brand-dark: #1d6fb6;
 
   /* Accent Colors */
+  --blue: #59b2ff;
+  --navy: #6a59ff;
   --purple: #b259ff;
   --fuschia: #ff59f9;
   --pink: #ff598b;
+  --danger: #ff5959;
   --orange: #ff8b59;
   --yellow: #ffcd59;
   --lime: #e1ff59;
   --green: #59ff91;
   --cyan: #59fff9;
-  --navy: #6a59ff;
 
   /* Feedback */
   --danger: #ff5959;
@@ -47,19 +49,21 @@
   --text-logo: 400 2.5rem var(--leckerli);
   --text-md: 800 1.75rem var(--baloo);
   --text-sm: 800 1.125rem var(--baloo);
-  --text-body-rd: 600 .875rem var(--open-sans);
+  --text-body-rd: 600 0.875rem var(--open-sans);
   --text-body-md: 400 1rem var(--open-sans);
   --text-body-sm: 400 0.875rem var(--open-sans);
   --text-body-xs: 400 0.75rem var(--open-sans);
 }
 
 body {
-  overflow-y: hidden;
+  display: grid;
+
+  gap: 1.25rem;
+
   background-color: var(--shape-background);
   font: var(--text-body-md);
   color: var(--text-body);
-  margin-inline: auto;
-
+  overflow-y: hidden;
 }
 
 h1 {
@@ -69,4 +73,3 @@ h1 {
 p {
   color: var(--text-heading);
 }
-

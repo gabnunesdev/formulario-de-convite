@@ -1,15 +1,15 @@
 @import url(../styles/fields/index.css);
-@import url(fields/input.css);
 
 #app {
   display: grid;
-  grid-template-columns: 32.78% 67.22%;
-  margin-block: 1.25rem;
+  grid-template-columns: 32.80% 67.20%;
+
+
+  margin-top: 2.5rem;
 
   gap: 1.25rem;
 
   height: 100vh;
-  overflow: hidden;
 }
 
 aside {
@@ -40,15 +40,23 @@ aside {
   }
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 fieldset {
   border: none;
 }
 
 main {
   display: flex;
+
   flex-direction: column;
   gap: 2.5rem;
   height: 100vh;
+  margin-right: auto;
 
   h1 {
     margin-bottom: 2.5rem;
@@ -59,17 +67,12 @@ main {
     background-color: var(--shape-body);
     padding-block: 5rem;
     padding-inline: 8.125rem;
-    margin-right: auto;
+
     border-radius: 0.75rem;
 
-    .input-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
+
 
     .about-heading {
-      /* background-color: red; */
       width: 35rem;
 
       display: flex;
@@ -102,3 +105,5 @@ legend {
   font: var(--text-sm);
   margin-bottom: 1.5rem;
 }
+
+

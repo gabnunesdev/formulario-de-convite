@@ -15,15 +15,28 @@ textarea {
   &::placeholder {
     color: var(--input-placeholder);
   }
+}
 
-
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 input[type="datetime-local"] {
   text-transform: uppercase;
-  &::-webkit-calendar-picker-indicator{
+  &::-webkit-calendar-picker-indicator {
     display: none;
   }
 }
+
+textarea:focus {
+  outline: 1px solid var(--brand-light);
+}
+
+input[type="text"]:focus {
+  outline: 1px solid var(--brand-light);
+}
+
 
 

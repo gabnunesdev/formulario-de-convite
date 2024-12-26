@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Festivite</title>
 
+    <link rel="shortcut icon" href="/assets/Logo.svg" type="image/x-icon" />
+
     <link rel="stylesheet" href="styles/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -181,10 +183,48 @@
                   <textarea
                     name="description"
                     id="description"
-                    rows="10"
+                    rows="5"
                     cols="30"
                     placeholder="Escreva sobre os detalhes do evento"
                   ></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="customization">
+              <legend>
+                <img src="assets/icons/paintbrush-vertical.svg" alt="" />
+                Personalização
+              </legend>
+              <div class="customization-heading">
+                <div class="input-wrapper">
+                  <div class="color-wrapper">
+                    <label for="">Cor Principal</label>
+                    <div class="colors">
+                      <input type="color" value="#59b2ff" />
+                      <input type="color" value="#6a59ff" />
+                      <input type="color" value="#b259ff" />
+                      <input type="color" value="#ff59f9" />
+                      <input type="color" value="#ff598b" />
+                      <input type="color" value="#ff5959" />
+                      <input type="color" value="#ff8b59" />
+                      <input type="color" value="#ffcd59" />
+                      <input type="color" value="#e1ff59" />
+                      <input type="color" value="#59ff91" />
+                      <input type="color" value="#59fff9" />
+                    </div>
+                  </div>
+
+                  <div class="theme-wrapper">
+                    <label for="">Tema do evento</label>
+                    <div class="theme-cards">
+                      <div class="card">
+                        <input type="radio" name="theme-type" id="birthday" />
+                        <img src="assets/images/birthday.png" alt="" />
+                        <label for="birthday">Aniversário</label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </fieldset>
