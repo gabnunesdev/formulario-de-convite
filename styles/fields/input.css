@@ -23,6 +23,8 @@ textarea {
   gap: 0.75rem;
 }
 
+
+
 input[type="datetime-local"] {
   text-transform: uppercase;
   &::-webkit-calendar-picker-indicator {
