@@ -1,0 +1,79 @@
+/* Container do switch */
+.style-theme {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+
+  label {
+    position: relative;
+    width: 64px;
+    height: 32px;
+    background-color: var(--input-base);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid var(--input-stroke);
+  }
+  
+  label::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--input-stroke);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.4s;
+  }
+  
+}
+
+/* Texto do tema */
+.theme-text {
+  font: var(--text-body-sm);
+  color: var(--text-heading);
+  white-space: nowrap;
+  position: absolute;
+  left: 70px; /* Ajusta a posição do texto */
+  transition: opacity 0.3s;
+}
+
+.theme-text.dark {
+  opacity: 1; /* "Escuro" visível por padrão */
+}
+
+.theme-text.light {
+  opacity: 0; /* "Claro" oculto por padrão */
+}
+
+/* Troca de texto com checkbox */
+input[type="checkbox"]:checked ~ .theme-text.dark {
+  opacity: 0; /* "Escuro" desaparece */
+}
+
+input[type="checkbox"]:checked ~ .theme-text.light {
+  opacity: 1; /* "Claro" aparece */
+}
+
+/* Switch */
+input[type="checkbox"] {
+  display: none;
+}
+
+
+input[type="checkbox"]:checked + label {
+  background-color:var(--brand-light);
+}
+
+input[type="checkbox"]:checked + label::before {
+  transform: translateX(32px);
+  background-color: var(--text-heading);
+}
