@@ -23,8 +23,6 @@ textarea {
   gap: 0.75rem;
 }
 
-
-
 input[type="datetime-local"] {
   text-transform: uppercase;
   &::-webkit-calendar-picker-indicator {
@@ -40,5 +38,8 @@ input[type="text"]:focus {
   outline: 1px solid var(--brand-light);
 }
 
-
-
+.style-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+}

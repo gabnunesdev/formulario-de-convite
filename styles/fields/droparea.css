@@ -1,0 +1,51 @@
+.droparea-wrapper {
+  display: grid;
+  grid-template-areas:
+    "drop-title drop-title"
+    "dropzone text-file";
+  column-gap: 10px;
+  row-gap: 0.75rem;
+  align-items: center;
+}
+
+.drop-title {
+  grid-area: drop-title;
+}
+
+.text-file {
+  grid-area: text-file;
+  font: var(--text-body-md);
+  color: var(--input-placeholder);
+}
+
+.dropzone {
+  grid-area: dropzone;
+  background-color: var(--shape-button);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  position: relative;
+  height: 3rem;
+  cursor: pointer;
+
+  p {
+    font: var(--text-body-rd);
+    color: var(--text-heading);
+  }
+
+  & input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+}
