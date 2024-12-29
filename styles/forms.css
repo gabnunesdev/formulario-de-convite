@@ -78,15 +78,7 @@ main {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      .duration {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        label {
-          display: flex;
-          margin-bottom: 0.75rem;
-        }
-      }
+
     }
     .text-area {
       display: flex;

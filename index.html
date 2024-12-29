@@ -99,13 +99,13 @@
                   />
                 </div>
 
-                <div class="duration input-wrapper">
-                  <div>
+                <div class="grid-wrapper input-wrapper">
+                  <div class="input-wrapper">
                     <label for="start">Início</label>
                     <input type="datetime-local" name="start" id="start" />
                   </div>
 
-                  <div>
+                  <div class="input-wrapper">
                     <label for="finish">Fim</label>
                     <input type="datetime-local" name="finish" id="finish" />
                   </div>
@@ -308,7 +308,12 @@
                     <div class="droparea-wrapper">
                       <label class="drop-title" for="">Foto de capa</label>
                       <div class="dropzone">
-                        <input type="file" name="cover-file" id="cover-file" required/>
+                        <input
+                          type="file"
+                          name="cover-file"
+                          id="cover-file"
+                          required
+                        />
                         <img src="assets/icons/upload.svg" alt="" />
                         <p>Selecionar</p>
                       </div>
@@ -318,6 +323,85 @@
                 </div>
               </div>
             </fieldset>
+
+            <fieldset class="contact-info">
+              <legend>
+                <img src="assets/icons/contact.svg" alt="" />
+                Dados para contato
+              </legend>
+
+              <div class="contact-wrapper">
+                <div class="input-wrapper">
+                  <label for="name">Nome</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Nome completo"
+                    required
+                  />
+                </div>
+                <div class="grid-wrapper">
+                  <div class="input-wrapper">
+                    <label for="mail">E-mail</label>
+                    <input
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      placeholder="exemplo@email.com"
+                    />
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="fone">Telefone</label>
+                    <input
+                      type="tel"
+                      name="fone"
+                      id="fone"
+                      placeholder="(99) 99999-9999"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <footer>
+              <div class="checkbox-wrapper">
+                <div class="checkbox-inner">
+                  <div class="checkbox-image"></div>
+                  <input type="checkbox" name="terms" id="terms" />
+                  <label for="terms"
+                    >Li e concordo com os <span> Termos e Condições </span> e
+                    com a <span> Política de Privacidade </span></label
+                  >
+                </div>
+                <div class="checkbox-inner">
+                  <div class="checkbox-image"></div>
+                  <input
+                    type="checkbox"
+                    name="email-updates"
+                    id="email-updates"
+                  />
+                  <label for="email-updates"
+                    >Aceito receber atualizações e promoções por e-mail</label
+                  >
+                </div>
+                <div class="checkbox-inner">
+                  <div class="checkbox-image"></div>
+                  <input type="checkbox" name="sms-updates" id="sms-updates" />
+                  <label for="sms-updates"
+                    >Aceito receber atualizações e promoções por SMS</label
+                  >
+                </div>
+              </div>
+
+              <div>
+                <button class="btn-primary" type="submit">
+                  <img src="assets/icons/ticket.svg" alt="" />
+                  Gerar convite
+                </button>
+              </div>
+            </footer>
           </form>
         </div>
       </main>
