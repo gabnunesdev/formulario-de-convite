@@ -73,3 +73,9 @@ h1 {
 p {
   color: var(--text-heading);
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

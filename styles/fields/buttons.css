@@ -1,0 +1,23 @@
+button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  font: 600 1rem var(--open-sans);
+  color: var(--text-heading);
+
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+  border-radius: 0.5rem;
+
+  margin-top: 3rem;
+  background-color: var(--brand-dark);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--brand-mid);
+  }
+}
+

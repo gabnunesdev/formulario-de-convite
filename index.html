@@ -308,12 +308,7 @@
                     <div class="droparea-wrapper">
                       <label class="drop-title" for="">Foto de capa</label>
                       <div class="dropzone">
-                        <input
-                          type="file"
-                          name="cover-file"
-                          id="cover-file"
-                          required
-                        />
+                        <input type="file" name="cover-file" id="cover-file" />
                         <img src="assets/icons/upload.svg" alt="" />
                         <p>Selecionar</p>
                       </div>
@@ -369,7 +364,7 @@
               <div class="checkbox-wrapper">
                 <div class="checkbox-inner">
                   <div class="checkbox-image"></div>
-                  <input type="checkbox" name="terms" id="terms" />
+                  <input type="checkbox" name="terms" id="terms" required />
                   <label for="terms"
                     >Li e concordo com os <span> Termos e Condições </span> e
                     com a <span> Política de Privacidade </span></label
@@ -395,12 +390,10 @@
                 </div>
               </div>
 
-              <div>
-                <button class="btn-primary" type="submit">
-                  <img src="assets/icons/ticket.svg" alt="" />
-                  Gerar convite
-                </button>
-              </div>
+              <button class="btn-primary" type="submit">
+                <img src="assets/icons/ticket.svg" alt="" />
+                Gerar convite
+              </button>
             </footer>
           </form>
         </div>
