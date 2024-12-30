@@ -50,7 +50,10 @@ input[type="text"]:focus {
   gap: 1rem;
 }
 
-input[type="tel"]:focus, input[type="email"]:focus  {
+input[type="tel"]:focus,
+input[type="email"]:focus {
   outline: 1px solid var(--brand-light);
 }
+
+
 

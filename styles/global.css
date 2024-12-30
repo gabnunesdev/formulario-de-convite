@@ -68,6 +68,7 @@ body {
 
 h1 {
   font: var(--text-md);
+  color: var(--text-heading)
 }
 
 p {
@@ -78,4 +79,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+legend {
+  color: var(--text-heading)
 }

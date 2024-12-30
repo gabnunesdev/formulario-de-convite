@@ -85,7 +85,10 @@
           <form method="post" enctype="multipart/form-data">
             <fieldset class="about">
               <legend>
-                <img src="assets/icons/calendar.svg" alt="" />
+                <img
+                  src="assets/icons/calendar.svg"
+                  alt="ícone de calendário"
+                />
                 Sobre o evento
               </legend>
               <div class="about-heading">
@@ -96,18 +99,29 @@
                     name="title"
                     id="title"
                     placeholder="Nome do evento"
+                    required
                   />
                 </div>
 
                 <div class="grid-wrapper input-wrapper">
                   <div class="input-wrapper">
                     <label for="start">Início</label>
-                    <input type="datetime-local" name="start" id="start" />
+                    <input
+                      type="datetime-local"
+                      name="start"
+                      id="start"
+                      required
+                    />
                   </div>
 
                   <div class="input-wrapper">
                     <label for="finish">Fim</label>
-                    <input type="datetime-local" name="finish" id="finish" />
+                    <input
+                      type="datetime-local"
+                      name="finish"
+                      id="finish"
+                      required
+                    />
                   </div>
                 </div>
 
@@ -174,6 +188,7 @@
                       name="location"
                       id="location"
                       placeholder="Link ou endereço"
+                      required
                     />
                   </div>
                 </div>
@@ -193,7 +208,10 @@
 
             <fieldset class="customization">
               <legend>
-                <img src="assets/icons/paintbrush-vertical.svg" alt="" />
+                <img
+                  src="assets/icons/paintbrush-vertical.svg"
+                  alt="Ícone de um pincel"
+                />
                 Personalização
               </legend>
               <div class="customization-heading">
@@ -225,22 +243,34 @@
                           id="birthday"
                           checked
                         />
-                        <img src="assets/images/birthday.png" alt="" />
+                        <img
+                          src="assets/images/birthday.png"
+                          alt="Imagem de um bolo de aniversário"
+                        />
                         <label for="birthday">Aniversário</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="children" />
-                        <img src="assets/images/children.png" alt="" />
+                        <img
+                          src="assets/images/children.png"
+                          alt="Imagem de uma festa infantil"
+                        />
                         <label for="children">Infantil</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="graduation" />
-                        <img src="assets/images/graduation.png" alt="" />
+                        <img
+                          src="assets/images/graduation.png"
+                          alt="Imagem de roupas de formatura"
+                        />
                         <label for="graduation">Formatura</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="wedding" />
-                        <img src="assets/images/wedding.png" alt="" />
+                        <img
+                          src="assets/images/wedding.png"
+                          alt="Imagem de alianças de casamento"
+                        />
                         <label for="wedding">Casamento</label>
                       </div>
                       <div class="card">
@@ -249,7 +279,10 @@
                           name="theme-type"
                           id="baby-shower"
                         />
-                        <img src="assets/images/baby-shower.png" alt="" />
+                        <img
+                          src="assets/images/baby-shower.png"
+                          alt="Imagem de flores e um travesseiro"
+                        />
                         <label for="baby-shower">Chá de bebê</label>
                       </div>
                       <div class="card">
@@ -258,37 +291,58 @@
                           name="theme-type"
                           id="bridal-shower"
                         />
-                        <img src="assets/images/bridal-shower.png" alt="" />
+                        <img
+                          src="assets/images/bridal-shower.png"
+                          alt="Imagem de uma cozinha"
+                        />
                         <label for="bridal-shower">Chá de panela</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="carnival" />
-                        <img src="assets/images/carnival.png" alt="" />
+                        <img
+                          src="assets/images/carnival.png"
+                          alt="Imagem de itens de carnaval"
+                        />
                         <label for="carnival">Carnaval</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="easter" />
-                        <img src="assets/images/easter.png" alt="" />
+                        <img
+                          src="assets/images/easter.png"
+                          alt="Imagem de um ovo da páscoa"
+                        />
                         <label for="easter">Páscoa</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="saint-john" />
-                        <img src="assets/images/saint-john.png" alt="" />
+                        <img
+                          src="assets/images/saint-john.png"
+                          alt="Imagem de bandeiras de São João"
+                        />
                         <label for="saint-john">São João</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="halloween" />
-                        <img src="assets/images/halloween.png" alt="" />
+                        <img
+                          src="assets/images/halloween.png"
+                          alt="Imagem de abóboras do halloween"
+                        />
                         <label for="halloween">Halloween</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="christmas" />
-                        <img src="assets/images/christmas.png" alt="" />
+                        <img
+                          src="assets/images/christmas.png"
+                          alt="Imagem de presentes de Natal"
+                        />
                         <label for="christmas">Natal</label>
                       </div>
                       <div class="card">
                         <input type="radio" name="theme-type" id="other" />
-                        <img src="assets/images/other.png" alt="" />
+                        <img
+                          src="assets/images/other.png"
+                          alt="Imagem de várias mãos"
+                        />
                         <label for="other">Outro</label>
                       </div>
                     </div>
@@ -308,8 +362,16 @@
                     <div class="droparea-wrapper">
                       <label class="drop-title" for="">Foto de capa</label>
                       <div class="dropzone">
-                        <input type="file" name="cover-file" id="cover-file" />
-                        <img src="assets/icons/upload.svg" alt="" />
+                        <input
+                          type="file"
+                          name="cover-file"
+                          id="cover-file"
+                          required
+                        />
+                        <img
+                          src="assets/icons/upload.svg"
+                          alt="Ícone de upload"
+                        />
                         <p>Selecionar</p>
                       </div>
                       <p class="text-file">Nenhum arquivo selecionado</p>
@@ -321,7 +383,10 @@
 
             <fieldset class="contact-info">
               <legend>
-                <img src="assets/icons/contact.svg" alt="" />
+                <img
+                  src="assets/icons/contact.svg"
+                  alt="Ícone de uma agenda de contatos"
+                />
                 Dados para contato
               </legend>
 
@@ -335,6 +400,24 @@
                     placeholder="Nome completo"
                     required
                   />
+
+                  <div class="error-wrapper error">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 32 32"
+                      fill="#ff5959"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16 3.66675C9.18851 3.66675 3.66669 9.18857 3.66669 16.0001C3.66669 22.8116 9.18851 28.3334 16 28.3334C22.8115 28.3334 28.3333 22.8116 28.3333 16.0001C28.3333 9.18857 22.8115 3.66675 16 3.66675ZM1.66669 16.0001C1.66669 8.084 8.08394 1.66675 16 1.66675C23.9161 1.66675 30.3333 8.084 30.3333 16.0001C30.3333 23.9162 23.9161 30.3334 16 30.3334C8.08394 30.3334 1.66669 23.9162 1.66669 16.0001ZM16 9.66675C16.5523 9.66675 17 10.1145 17 10.6667V16.0001C17 16.5524 16.5523 17.0001 16 17.0001C15.4477 17.0001 15 16.5524 15 16.0001V10.6667C15 10.1145 15.4477 9.66675 16 9.66675ZM15 21.3334C15 20.7811 15.4477 20.3334 16 20.3334H16.0134C16.5656 20.3334 17.0134 20.7811 17.0134 21.3334C17.0134 21.8857 16.5656 22.3334 16.0134 22.3334H16C15.4477 22.3334 15 21.8857 15 21.3334Z"
+                        fill="#ff5959"
+                      />
+                    </svg>
+                    <span class="error-message"> Campo obrigatório</span>
+                  </div>
                 </div>
                 <div class="grid-wrapper">
                   <div class="input-wrapper">

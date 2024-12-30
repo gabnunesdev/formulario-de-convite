@@ -51,5 +51,10 @@
 
   &:has(:checked) {
     outline: 2px solid var(--brand-light);
+    background-color: var(--shape-button);
+  }
+
+  &:hover {
+    background-color: var(--shape-hover);
   }
 }
